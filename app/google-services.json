@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "111370859383",
+    "project_id": "camtact-fd948",
+    "storage_bucket": "camtact-fd948.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111370859383:android:a81a66c2e6fe58a3ae2772",
+        "android_client_info": {
+          "package_name": "io.camtact.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111370859383-cqb3bih50qi0i2f8h4dguh8ebnaft66k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtCUX7966_4iZ5XpO8-GvgRjPoAuGoPk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111370859383-cqb3bih50qi0i2f8h4dguh8ebnaft66k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

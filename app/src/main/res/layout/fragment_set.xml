@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".view.fragment.SetFragment">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true" />
+
+    <RelativeLayout
+        android:id="@+id/edit_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressbar"
+        android:background="@drawable/background_set_button">
+
+        <TextView
+            android:id="@+id/edit_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="#00FFFFFF"
+            android:padding="13dp"
+            android:text="내 닉네임 : "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/edit_name_img_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toEndOf="@+id/edit_name_text"
+            android:layout_toRightOf="@+id/edit_name_text"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edit_text"
+            android:contentDescription="@string/missing_content"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ask_btn"
+        android:background="@drawable/background_set_button"
+        android:text="개발자에게 편하게 문의 및 건의"
+        android:padding="13dp"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_name_layout"/>
+
+    <Button
+        android:id="@+id/error_report_btn"
+        android:background="@drawable/background_set_button"
+        android:text="개발자에게 편하게 오류 알리기"
+        android:padding="13dp"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ask_btn"/>
+
+    <Button
+        android:id="@+id/leave_btn"
+        android:background="@drawable/background_set_button"
+        android:text="회원 탈퇴하기"
+        android:padding="13dp"
+        android:gravity="center_vertical"
+        android:textColor="#F59898"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/error_report_btn"/>
+
+    <TextView
+        android:text="contact : eskapizmy@gmail.com"
+        android:gravity="end"
+        android:layout_above="@+id/adView"
+        android:id="@+id/contact_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_set_button"
+        android:padding="10dp"
+        android:textColor="#918A8A"
+        android:textSize="13sp" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7767288335783243~4437647658">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

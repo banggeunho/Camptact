@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        >
+    </com.google.android.gms.ads.AdView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/adView"
+        android:id="@+id/recycler_view">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/no_friend_image"
+        android:layout_width="110dp"
+        android:layout_height="140dp"
+        android:background="@drawable/lets_make_friend"
+        android:contentDescription="@string/missing_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/no_friend_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_friend_image"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp"
+        android:text="현재 대화중인 상대가 없습니다. \n 랜덤 매칭을 통해 찾아보세요!"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:indeterminate="true"
+        />
+
+</RelativeLayout>

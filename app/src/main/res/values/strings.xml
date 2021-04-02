@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Camtact</string>
+    <string name="title_match">Match</string>
+    <string name="title_chat">Chatting</string>
+    <string name="title_set">Setting</string>
+
+    <string name="missing_content">error</string>
+
+    <string name="Seen">Seen</string>
+    <string name="Delivered">Delivered</string>
+    <string name="your_string_here"><u>*내 개인 정보가 노출되지는 않나요?</u></string>
+</resources>

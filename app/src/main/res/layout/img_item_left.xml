@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="325dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/msg_text"
+        android:layout_width="wrap_content"
+        android:maxWidth="270dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="3dp"
+        android:text="fuck me"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:background="@drawable/background_left"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_margin="3dp"
+        android:layout_width="270dp"
+        android:layout_height="240dp"
+        android:maxWidth="270dp"
+        android:maxHeight="240dp"
+        android:minHeight="120dp"
+        android:minWidth="120dp"
+        android:contentDescription="@string/missing_content"
+        android:adjustViewBounds="true"
+        />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:id="@+id/seen_img"
+        android:background="#7366BD"
+        android:layout_toLeftOf="@+id/image_view"
+        android:layout_toStartOf="@+id/image_view"
+        android:contentDescription="@string/missing_content"
+        android:visibility="gone"
+        android:layout_alignBottom="@+id/image_view"/>
+
+    <TextView
+        android:id="@+id/time_text"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_view"
+        android:layout_toEndOf="@+id/image_view"
+        android:layout_alignBottom="@+id/image_view"/>
+
+</RelativeLayout>

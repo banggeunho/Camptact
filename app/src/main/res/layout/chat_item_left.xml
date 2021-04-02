@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="325dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/msg_text"
+        android:layout_width="wrap_content"
+        android:maxWidth="270dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="3dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:background="@drawable/background_left"/>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:padding="8dp"
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/missing_content"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:id="@+id/seen_img"
+        android:background="#7366BD"
+        android:layout_toLeftOf="@+id/msg_text"
+        android:layout_toStartOf="@+id/msg_text"
+        android:contentDescription="@string/missing_content"
+        android:visibility="gone"
+        android:layout_alignBottom="@+id/msg_text"/>
+
+    <TextView
+        android:id="@+id/time_text"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/msg_text"
+        android:layout_toEndOf="@+id/msg_text"
+        android:layout_alignBottom="@+id/msg_text"/>
+
+</RelativeLayout>
