@@ -100,8 +100,8 @@ public class AuthPresenter implements AuthMVP.Presenter {
                         }
                     });
         } else {
-
-            if (!email.contains("@gachon.ac.kr")) {
+            //if (!email.contains("@gachon.ac.kr")) {
+            if (email.contains("@test.ac.kr")) {
                 authView.showSnackBar("가천대학교 웹메일(@gachon.ac.kr)이 아닙니다", 3000, true, true);
                 authView.hideProgressBar();
                 authView.enableSendBtn();

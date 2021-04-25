@@ -8,5 +8,5 @@
 
     <string name="Seen">Seen</string>
     <string name="Delivered">Delivered</string>
-    <string name="your_string_here"><u>*내 개인 정보가 노출되지는 않나요?</u></string>
+    <string name="your_string_here"><u>내 개인 정보가 노출되지는 않나요?</u></string>
 </resources>

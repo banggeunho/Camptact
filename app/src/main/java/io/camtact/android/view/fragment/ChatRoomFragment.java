@@ -62,7 +62,7 @@ public class ChatRoomFragment extends Fragment implements ChatRoomMVP.View {
         if(getContext() != null && chatRoomPresenter.checkOnlineStatus(getContext())) {
              v = inflater.inflate(R.layout.fragment_chatroom, container, false);
             setupView(v);
-            initAd(v);
+            //initAd(v);
         } else {
             v = inflater.inflate(R.layout.fragment_offline, container, false);
         }
@@ -101,11 +101,7 @@ public class ChatRoomFragment extends Fragment implements ChatRoomMVP.View {
         });
 
         AdView mAdView = v.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice("9425B3D2A5C734031F36632A80F10B1F")
-                .addTestDevice("B518ED7493EE60C3ED642113D7A099BC")
-                .build();
+        AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
     }
 
@@ -123,7 +119,7 @@ public class ChatRoomFragment extends Fragment implements ChatRoomMVP.View {
     public void getRoomCount() {
         progressCircle.setVisibility(View.GONE);
        if(chatRoomAdapter.getItemCount() == 0) {
-           noFriendImg.setVisibility(View.VISIBLE);
+          // noFriendImg.setVisibility(View.VISIBLE);
            noFriendText.setVisibility(View.VISIBLE);
        }
     }

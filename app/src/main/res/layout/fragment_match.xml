@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"
         android:layout_centerHorizontal="true"
-        android:text="기다리기 무료하시면...   카톡이나 유튜브 등\n 다른 어플을 잠시 이용해보세요. \n 이 어플을 종료하지 않는 한 서칭은 계속됩니다."/>
+        android:text="상대방에 대한 폭언/욕설은 이용제한 대상입니다. 올바른 언어 사용!"/>
 
     <ProgressBar
         android:id="@+id/progressbar_circle"
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="서비스 초기라 유저 수가 적어, 매칭이 오래 걸릴 수 있습니다ㅠ"/>
+        android:text="서비스 이용자가 없는 경우 매칭되는데 오래 걸립니다."/>
 
     <ProgressBar
         android:id="@+id/progressbar"
@@ -64,14 +64,14 @@
         android:textOn="매칭 중단하기"
         android:textOff="랜덤 채팅 시작하기"/>
     <com.google.android.gms.ads.AdView
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/adView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
-    android:layout_alignParentBottom="true"
-    ads:adSize="BANNER"
-    ads:adUnitId="ca-app-pub-7767288335783243~4437647658">
-</com.google.android.gms.ads.AdView>
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="/6499/example/banner">
+    </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>

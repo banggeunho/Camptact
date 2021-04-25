@@ -28,7 +28,7 @@
             android:layout_alignParentLeft="true"
             android:background="#00FFFFFF"
             android:padding="13dp"
-            android:text="내 닉네임 : "
+            android:text="닉네임 : "
             android:textColor="#000000"
             android:textSize="18sp" />
 
@@ -46,27 +46,27 @@
 
     <Button
         android:id="@+id/ask_btn"
-        android:background="@drawable/background_set_button"
-        android:text="개발자에게 편하게 문의 및 건의"
-        android:padding="13dp"
-        android:gravity="center_vertical"
-        android:textColor="#000000"
-        android:textSize="18sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_name_layout"/>
+        android:layout_below="@+id/edit_name_layout"
+        android:background="@drawable/background_set_button"
+        android:gravity="center_vertical"
+        android:padding="13dp"
+        android:text="문의 및 건의"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/error_report_btn"
-        android:background="@drawable/background_set_button"
-        android:text="개발자에게 편하게 오류 알리기"
-        android:padding="13dp"
-        android:gravity="center_vertical"
-        android:textColor="#000000"
-        android:textSize="18sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ask_btn"/>
+        android:layout_below="@+id/ask_btn"
+        android:background="@drawable/background_set_button"
+        android:gravity="center_vertical"
+        android:padding="13dp"
+        android:text="Report Error"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/leave_btn"
@@ -81,14 +81,14 @@
         android:layout_below="@+id/error_report_btn"/>
 
     <TextView
-        android:text="contact : eskapizmy@gmail.com"
-        android:gravity="end"
-        android:layout_above="@+id/adView"
         android:id="@+id/contact_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
         android:background="@drawable/background_set_button"
+        android:gravity="end"
         android:padding="10dp"
+        android:text="manager : panggeunho@gmail.com"
         android:textColor="#918A8A"
         android:textSize="13sp" />
 
@@ -100,7 +100,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-7767288335783243~4437647658">
+        ads:adUnitId="/6499/example/banner">
     </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>
