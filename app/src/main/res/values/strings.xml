@@ -2,11 +2,26 @@
     <string name="app_name">Camtact</string>
     <string name="title_match">Match</string>
     <string name="title_chat">Chatting</string>
+    <string name="title_brd">Board</string>
     <string name="title_set">Setting</string>
 
     <string name="missing_content">error</string>
-
+    <string name="start">Got IT</string>
+    <string name="next">Next</string>
     <string name="Seen">Seen</string>
     <string name="Delivered">Delivered</string>
     <string name="your_string_here"><u>내 개인 정보가 노출되지는 않나요?</u></string>
+    <string name="please_grant_permission">권한을 허용해 주세요.</string>
+
+    <string name="skip">SKIP</string>
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
 </resources>

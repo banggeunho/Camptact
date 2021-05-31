@@ -2,14 +2,34 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffffff">
+    android:background="@color/colorHotPink"
+    >
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="250dp"
-        android:layout_height="101dp"
-        android:layout_centerInParent="true"
-        android:background="@drawable/lest_make_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/camtactpink"
+
         android:contentDescription="@string/missing_content" />
+
+    <TextView
+        android:id="@+id/ment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="224dp"
+        android:background="@color/colorHotPink"
+        android:fontFamily="@font/b210"
+        android:text="캠택트와 함께라면 당신도 인싸"
+
+        android:textColor="@color/colorRedPink"
+        android:textSize="20dp"></TextView>
+
 
 </RelativeLayout>

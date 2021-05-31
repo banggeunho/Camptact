@@ -12,9 +12,9 @@
     <application
         android:fullBackupContent="true"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_foreground"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
@@ -25,6 +25,8 @@
         <activity android:name=".view.SplashActivity"
             android:screenOrientation="portrait">
         </activity>
+
+        <activity android:name=".view.GuideSplashActivity"/>
 
         <activity
             android:name=".view.ImageActivity"
@@ -39,6 +41,11 @@
             android:alwaysRetainTaskState="true"
             android:label="@string/app_name"
             android:screenOrientation="portrait"> </activity>
+
+        <activity android:name=".view.WritePostActivity" />
+        <activity android:name=".view.PostActivity" />
+        <activity android:name=".view.GalleryActivity" />
+
         <activity
             android:name=".view.AuthActivity"
             android:alwaysRetainTaskState="true"

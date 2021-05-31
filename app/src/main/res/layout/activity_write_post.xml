@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="게시판"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:src="@drawable/board" />
+
+            <EditText
+                android:id="@+id/titleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:hint="제목"
+                android:inputType="textPersonName" />
+
+
+            <LinearLayout
+                android:id="@+id/contentsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/view_contents_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/check"
+                android:layout_gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:layout_marginTop="8dp"
+                android:text="확인"
+                android:textAlignment="center"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/buttonsBackgroundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#91646464"
+        android:visibility="gone">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:elevation="10dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="삭제" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>

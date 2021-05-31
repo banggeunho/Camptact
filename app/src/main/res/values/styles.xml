@@ -9,5 +9,15 @@
         <!--No Title Bar-->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+        <!-- 폰트설정 -->
+        <item name="android:textViewStyle"> @style/customFontStyle</item>
+        <item name="android:buttonStyle"> @style/customFontStyle</item>
+        <item name="android:buttonStyleToggle"> @style/customFontStyle</item>
+    </style>
+
+    <!-- 폰트 설정 -->
+    <style name="customFontStyle" parent="@android:style/Widget.DeviceDefault.TextView">
+        <item name="android:fontFamily">@font/b210</item>
     </style>
 </resources>

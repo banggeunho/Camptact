@@ -39,7 +39,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onSuccess(Void aVoid) {
                 requestMatch = false;
-                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                startActivity(new Intent(SplashActivity.this, GuideSplashActivity.class));
                 finish();
             }
         });

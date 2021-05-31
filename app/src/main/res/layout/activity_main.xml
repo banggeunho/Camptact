@@ -14,24 +14,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="#ffffffff"
+        android:background="@color/colorHotPink"
         android:padding="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="52dp">
+            android:layout_height="60dp">
+
 
             <ImageView
                 android:id="@+id/logo"
-                android:layout_width="150dp"
-                android:layout_height="85dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="13dp"
-                android:layout_marginLeft="13dp"
-                android:background="@drawable/lest_make_friend"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/camtactpink"
                 android:contentDescription="@string/missing_content" />
+
+            <TextView
+                android:id="@+id/ment"
+                android:layout_width="wrap_content"
+                android:layout_height="16.5dp"
+                android:layout_alignBottom="@id/logo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorHotPink"
+                android:text="캠택트와 함께라면 당신도 인싸"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/b210">
+            </TextView>
+
 
             <!--            <TextView-->
             <!--                android:id="@+id/friend_name"-->
@@ -59,6 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/nav_view"
         android:layout_below="@+id/appbar_layout"
+        android:background="@color/colorHotPink"
         />
 
 
@@ -68,7 +86,7 @@
         android:id="@+id/nav_view"
         android:layout_width="match_parent"
         android:layout_height="43dp"
-        android:background="?android:attr/windowBackground"
+        android:background="@color/colorHotPink"
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_nav_menu" />
 

@@ -15,6 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
 import io.camtact.android.R;
+import io.camtact.android.view.fragment.BoardFragment;
 import io.camtact.android.view.fragment.ChatRoomFragment;
 import io.camtact.android.view.fragment.MatchFragment;
 import io.camtact.android.view.fragment.SetFragment;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private MatchFragment matchFragment = new MatchFragment();
     private ChatRoomFragment chatRoomFragment = new ChatRoomFragment();
     private SetFragment setFragment = new SetFragment();
+    private BoardFragment boardFragment = new BoardFragment();
 
     private long backPressedTime= 0;
 
@@ -68,6 +70,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                     case R.id.navigation_chat: {
                         transaction.replace(R.id.frame_layout, chatRoomFragment).commitAllowingStateLoss();
+                        break;
+                    }
+                    case R.id.navigation_brd: {
+                        transaction.replace(R.id.frame_layout, boardFragment).commitAllowingStateLoss();
                         break;
                     }
                     case R.id.navigation_set: {
